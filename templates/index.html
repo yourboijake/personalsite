@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+     <title>Jacob Dunning's Personal Website</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="Tooplate">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="static/css/bootstrap.min.css">
+     <link rel="stylesheet" href="static/css/all.min.css">
+     <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+     <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="static/css/tooplate-ben-resume-style.css">
+<!--
+Tooplate 2120 Ben Resume
+https://www.tooplate.com/view/2120-ben-resume
+
+General points:
+- change color scheme so it looks a little less default -> done
+- add in slight off-white/grayscale behind resume contents to offset it from the lead photo and info -> done
+- make resume items 2 colums, fill width -> done
+- make resume items look properly formatted on mobile, especially having logo and job title side-by-side -> done
+- better wide photo at the top (like my hero, Gary Sheng)
+- insert projects into project section (interactive housing data map?) -> working on those, not quite done yet
+- contact footer at bottom of page: include email, linkedin, and github -> done
+- configure resume download
+- spice up the first header section
+-->
+</head>
+
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+
+    <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+
+            <a class="navbar-brand" href="#">
+                Jacob Dunning
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a href="#intro" class="nav-link smoothScroll">Introduction</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link smoothScroll">Resume</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link smoothScroll">Contact</a>
+                    </li>
+                </ul>
+                <!--make this button work to download resume that has no phone number-->
+                <div class="mt-lg-0 mt-3 mb-4 mb-lg-0">
+                    <a href="static/images/Jacob_Dunning_Data_Scientist.pdf" download="Jacob_Dunning_Resume.pdf" class="custom-btn btn" download>Download Resume</a>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero d-flex flex-column justify-content-center align-items-center" id="intro">
+
+         <div class="container">
+            <div class="row">
+
+                  <div class="mx-auto col-xl-5 col-xl-5 col-10">
+                      <img src="static/images/prof_photo-min.jpg" class="img-fluid" alt="Jacob Dunning">
+                  </div>
+
+                   <div class="d-flex flex-column justify-content-center align-items-left col-lg-7 col-md-7 col-12">
+                        <div class="hero-text">
+
+                            <h1 class="hero-title">Hi, I'm Jacob Dunning</h1>
+                          
+                            <p class="email-link">
+                                I work in Data Science and Analytics, and would love to learn more about how the power of data-driven insights can bring value to your business! 
+                                <br> I'm especially passionate about economics and market research, large-scale data processing and ETL, and machine learning. 
+                                <br> I'm based in Denver, CO.
+                                <br>
+                            </p>
+                          
+                        </div>
+                    </div>
+
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="about section-padding" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h2 class="mb-4">Resume</h2>
+                    <h3 class="mb-4">Work Experience</h3>
+                </div>
+            </div>
+
+            <div class="job_experiences">
+              <img src="static/images/comcast_small.jpg" alt="Comcast Logo" class="company_logo" height="100em" width="auto">
+              <div class="job_experience_box">
+                <h5>Data Scientist, <br>Wholesale Voice</h5>
+                <h7>Aug 2023 - Present</h7>
+              </div>
+              <img src="static/images/tns.jpeg" alt="TNS Logo" class="company_logo" height="100em" width="auto">
+              <div class="job_experience_box">
+                <h5>Data Analyst, <br>Call Guardian</h5>
+                <h7>Oct 2020 - Jul 2023</h7>
+              </div>
+              <div class="job_experience_description_a">
+                <ul>
+                  <li>Managed voice traffic volumes worth $110k annually, writing time series forecasts in Python to
+                    ensure revenue optimization and contract compliance</li>
+                  <li>Wrote Python ETL pipeline to retrieve structured and unstructured API data, clean the data, then
+                    store in SQL Server for use by ML team</li>
+                  <li>Performed Linux sysadmin tasks for 40+ servers, including writing Bash scripts, OS patching,
+                    and other maintenance tasks</li>
+                  <li>Delivered analytics through ad hoc SQL analysis on billion+ row datasets, providing
+                    business-critical insights in Tableau</li>
+                </ul>
+                </div>
+                <div class="job_experience_description_b">
+                    <ul>
+                    <li>Wrote Python scripts to automate various customer service operations on Linux system,
+                      reducing response times by over 10x and reducing my team's workload by 60%</li>
+                    <li>Trained NLP model to classify spam transcripts with over 90% accuracy</li>
+                    <li>Used Python and SQL to code ETL pipelines and data cleaning for development and testing of
+                      machine learning models, integrating code with Git repo for extensible usability</li>
+                    <li>Developed time-to-detection metric for spam detection machine learning model, coded in
+                      Python and added to SQL database and Tableau dashboard</li>
+                    <li>Wrote complex queries, optimized to run on large (billion+ row) datasets using Hive SQL in
+                      Hadoop</li>
+                    <li>Completed programming tasks according to Agile methodology, using Jira</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="ed-and-skills">
+                    <div class="ed-box">
+                    <h3 class="mb-4">Education</h3>
+                    <div class="ed-grid">
+                        <img src="static/images/whitworth.gif" alt="Whitworth Logo" class="school_logo" height="100em">
+                        <h5 class="school-name">Whitworth University</h5>
+                        <h7 class="BA-description">BA, Mathematics and Economics <br>2016-2020</h7>
+                    </div>
+                    </div>
+
+                    <div class="skill-box">
+                    <h3 class="mb-4">Skills</h3>
+                    <p><ul>
+                          <li>Programming/Data Analysis: SQL (4 years), Python (5 years), Tableau (1 yr)</li>
+                          <li>Research: Able to efficiently retrieve, organize, and summarize complex information in a timely
+                              manner</li>
+                          <li>Statistics and ML: Probability distributions, hypothesis testing, regression analysis, machine learning
+                              (sklearn, numpy, pandas)</li>
+                      </ul>
+                    </div>
+                
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact" id="contact">
+        <div class="container" id="contact_container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-12">
+                    <h3 class="mb-4"><br>Contact</h3>
+                </div>
+            </div>
+        
+        <br>
+        <a href="https://www.linkedin.com/in/jacob-dunning-418b1a88/">
+            <img src="static/images/linkedin_logo.jpg" width="60" height="60" id="linkedin_logo" class="contact_logo">
+        </a>
+        <a href="https://github.com/yourboijake?tab=repositories" style="margin-left: 30px;" >
+            <img src="static/images/github_logo.jpg" width="60" height="60" id="github_logo" class="contact_logo">
+        </a>
+        <a href="mailto:jacob_dunning@outlook.com" style="margin-left: 30px;" >
+            <img src="static/images/email.jpg" width="100" height="60" id="email_logo" class="contact_logo">
+        </a>
+        <p style="margin-bottom: 100px">    </p>
+        </div>
+    </section>
+
+
+     <!-- SCRIPTS -->
+     <script src="static/js/jquery.min.js"></script>
+     <script src="static/js/bootstrap.min.js"></script>
+     <script src="static/js/smoothscroll.js"></script>
+     <script src="static/js/owl.carousel.min.js"></script>
+     <script src="static/js/custom.js"></script>
+
+</body>
+</html>
